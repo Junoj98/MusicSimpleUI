@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="music.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--box icons enda web site la thaan symbols eduththa-->
+    <div class="main">
+        <!--top bar-->
+        <div class="top_bar">
+            <button onclick="sidebar()"><i class='bx bx-chevron-right'></i></button>
+            <div class="options">
+                <button><i class='bx bxs-music'></i></button>
+                <button><i class='bx bxs-volume' ></i></button>
+                <button><i class='bx bxs-edit' ></i></button>
+            </div>
+            <button onclick="open_p()"><i class='bx bx-menu' ></i></button>
+        </div>
+        <div class="playing_part">
+            <div class="img">
+                <img src="image/1.jpg" alt="picture">
+            </div>
+        </div>
+        <!--control part-->
+        <div class="control_part">
+            <div class="song_title"> <!--.apple and enter = <div class="apple"></div>-->
+                <p>Song Title</p>
+                <p>Artist Name</p>
+            </div>
+            <div class="control_buttons">
+                <div class="range_slider">
+                    <input type="range" min="0" max="100" id="slider" value="0">
+                    <p>3:00</p>
+                </div>
+                <div class="main_buttons">
+                    <button id="previous"><i class='bx bx-skip-previous'></i></button>
+                    <button id="play_button"><i class='bx bx-play'></i></button>
+                    <button id="next"><i class='bx bx-skip-next' ></i></button>
+                </div>
+            </div>
+        </div>
+        <!--playlist songs-->  
+        <div class="playlist">
+            <div class="play_songs">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button><i class='bx bx-play'></i></button>
+            </div>
+
+            <div class="play_songs">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button id="active_button"><i class='bx bx-play'></i></button>
+            </div>
+
+            <div class="play_songs">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button><i class='bx bx-play'></i></button>
+            </div>
+
+            <div class="play_songs">
+                <p id="p_title">song name</p>
+                <p id="p_artist">artist name</p>
+                <button><i class='bx bx-play'></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+    
+</body>
+</html>
